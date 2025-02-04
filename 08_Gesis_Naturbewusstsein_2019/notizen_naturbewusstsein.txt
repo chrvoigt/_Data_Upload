@@ -1,0 +1,23 @@
+
+https://search.gesis.org/research_data/ZA7648
+
+
+https://www.sinus-institut.de/media-center/studien/naturbewusstseinsstudie-2019
+
+
+Bundesamt für Naturschutz 
+https://www.bfn.de/naturbewusstsein
+
+report 
+https://www.bfn.de/sites/default/files/2021-12/2021-indikatorenbericht-2019-naturbewusstseinsstudien-bfn_0.pdf 
+
+
+SPSS in Python 
+pip install pyreadstat und dann ... 
+https://stackoverflow.com/questions/42532250/convert-a-sav-file-to-csv-file-in-python 
+
+
+
+gute chi2 Tests 
+2022-WissenschaflicherVertiefungsbericht-NatBew19-20-bfn.pdf 
+
