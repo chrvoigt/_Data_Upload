@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='movies (movies)' inline='true' name='federated.0bjqff213e3hxy1aer1lx0ljewru' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='movies' name='excel-direct.1j9n3870eyyz7v187lpfx1l48pmw'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/me/code/_Tableau/_Data_Tests/_Bechdel_Test /movies.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1j9n3870eyyz7v187lpfx1l48pmw' name='movies' table='[movies$]' type='table'>
+          <columns gridOrigin='A1:O1795:no:A1:O1795:0' header='yes' outcome='2'>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='imdb' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='test' ordinal='3' />
+            <column datatype='string' name='clean_test' ordinal='4' />
+            <column datatype='string' name='binary' ordinal='5' />
+            <column datatype='integer' name='budget' ordinal='6' />
+            <column datatype='string' name='domgross' ordinal='7' />
+            <column datatype='string' name='intgross' ordinal='8' />
+            <column datatype='string' name='code' ordinal='9' />
+            <column datatype='integer' name='budget_2013$' ordinal='10' />
+            <column datatype='string' name='domgross_2013$' ordinal='11' />
+            <column datatype='string' name='intgross_2013$' ordinal='12' />
+            <column datatype='integer' name='period code' ordinal='13' />
+            <column datatype='integer' name='decade code' ordinal='14' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[movies]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O1795:no:A1:O1795:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[imdb]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>imdb</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>test</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[test]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>test</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clean_test</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[clean_test]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>clean_test</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>binary</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[binary]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>binary</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[budget]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>budget</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domgross</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[domgross]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>domgross</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intgross</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[intgross]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>intgross</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[code]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>code</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget_2013$</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[budget_2013$]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>budget_2013$</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>domgross_2013$</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[domgross_2013$]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>domgross_2013$</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>intgross_2013$</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[intgross_2013$]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>intgross_2013$</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>period code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[period code]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>period code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>decade code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[decade code]</local-name>
+            <parent-name>[movies]</parent-name>
+            <remote-alias>decade code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Balkenfarbe' datatype='string' name='[Calculation_4341399716875128832]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [binary] = &apos;FAIL&apos; THEN &apos;Fail&apos; &#10;ELSEIF [binary] = &apos;PASS&apos; Then &apos;Pass&apos;&#10;ELSEIF [test] = &apos;ALLE&apos; THEN &apos;Gesamt&apos; &#10;ELSE &apos;hmm&apos;&#10;END' />
+      </column>
+      <column caption='movies' datatype='table' name='[__tableau_internal_object_id__].[movies_CF18E67AFCB0493681105E4CB17997FD]' role='measure' type='quantitative' />
+      <column caption='Binary' datatype='string' name='[binary]' role='dimension' type='nominal' />
+      <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+      <column caption='Budget 2013$' datatype='integer' name='[budget_2013$]' role='measure' type='quantitative' />
+      <column caption='Clean Test' datatype='string' name='[clean_test]' role='dimension' type='nominal' />
+      <column caption='Code' datatype='string' name='[code]' role='dimension' type='nominal' />
+      <column caption='Decade Code' datatype='integer' name='[decade code]' role='dimension' type='ordinal' />
+      <column caption='Domgross' datatype='string' name='[domgross]' role='dimension' type='nominal' />
+      <column caption='Domgross 2013$' datatype='string' name='[domgross_2013$]' role='dimension' type='nominal' />
+      <column caption='Imdb' datatype='string' name='[imdb]' role='dimension' type='nominal' />
+      <column caption='Intgross' datatype='string' name='[intgross]' role='dimension' type='nominal' />
+      <column caption='Intgross 2013$' datatype='string' name='[intgross_2013$]' role='dimension' type='nominal' />
+      <column caption='Period Code' datatype='integer' name='[period code]' role='dimension' type='ordinal' />
+      <column caption='Test' datatype='string' name='[test]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[Calculation_4341399716875128832]' derivation='None' name='[none:Calculation_4341399716875128832:nk]' pivot='key' type='nominal' />
+      <column-instance column='[binary]' derivation='None' name='[none:binary:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='de_DE' class='hyper' dbname='/var/folders/_m/rsc4sjld36d_h6tytcrypvtm0000gn/T/tableau-temp/#TableauTemp_1ahgcku1j0pb9y1amrcvu0tk1543.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/08/2025 07:17:59 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>movies</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imdb]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb</remote-alias>
+              <ordinal>1</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1794</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>2</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>test</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[test]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>test</remote-alias>
+              <ordinal>3</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clean_test</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[clean_test]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clean_test</remote-alias>
+              <ordinal>4</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>binary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[binary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>binary</remote-alias>
+              <ordinal>5</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget</remote-alias>
+              <ordinal>6</ordinal>
+              <family>movies</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>244</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domgross</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[domgross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domgross</remote-alias>
+              <ordinal>7</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1457</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intgross</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[intgross]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intgross</remote-alias>
+              <ordinal>8</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1466</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>code</remote-alias>
+              <ordinal>9</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>88</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget_2013$</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budget_2013$]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget_2013$</remote-alias>
+              <ordinal>10</ordinal>
+              <family>movies</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>945</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>domgross_2013$</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[domgross_2013$]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>domgross_2013$</remote-alias>
+              <ordinal>11</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1643</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>intgross_2013$</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[intgross_2013$]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>intgross_2013$</remote-alias>
+              <ordinal>12</ordinal>
+              <family>movies</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1651</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>period code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[period code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>period code</remote-alias>
+              <ordinal>13</ordinal>
+              <family>movies</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>decade code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[decade code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>decade code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>movies</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[movies_CF18E67AFCB0493681105E4CB17997FD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:binary:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;PASS&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;FAIL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_4341399716875128832:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Pass&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%all%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fail&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gesamt&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Einzelwert&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Deutschland&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='movies' id='movies_CF18E67AFCB0493681105E4CB17997FD'>
+            <properties context=''>
+              <relation connection='excel-direct.1j9n3870eyyz7v187lpfx1l48pmw' name='movies' table='[movies$]' type='table'>
+                <columns gridOrigin='A1:O1795:no:A1:O1795:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='year' ordinal='0' />
+                  <column datatype='string' name='imdb' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='test' ordinal='3' />
+                  <column datatype='string' name='clean_test' ordinal='4' />
+                  <column datatype='string' name='binary' ordinal='5' />
+                  <column datatype='integer' name='budget' ordinal='6' />
+                  <column datatype='string' name='domgross' ordinal='7' />
+                  <column datatype='string' name='intgross' ordinal='8' />
+                  <column datatype='string' name='code' ordinal='9' />
+                  <column datatype='integer' name='budget_2013$' ordinal='10' />
+                  <column datatype='string' name='domgross_2013$' ordinal='11' />
+                  <column datatype='string' name='intgross_2013$' ordinal='12' />
+                  <column datatype='integer' name='period code' ordinal='13' />
+                  <column datatype='integer' name='decade code' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Frauendarstellung in Filmen'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies (movies)' name='federated.0bjqff213e3hxy1aer1lx0ljewru' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bjqff213e3hxy1aer1lx0ljewru'>
+            <column caption='Balkenfarbe' datatype='string' name='[Calculation_4341399716875128832]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [binary] = &apos;FAIL&apos; THEN &apos;Fail&apos; &#10;ELSEIF [binary] = &apos;PASS&apos; Then &apos;Pass&apos;&#10;ELSEIF [test] = &apos;ALLE&apos; THEN &apos;Gesamt&apos; &#10;ELSE &apos;hmm&apos;&#10;END' />
+            </column>
+            <column caption='Binary' datatype='string' name='[binary]' role='dimension' type='nominal' />
+            <column-instance column='[imdb]' derivation='Count' name='[cnt:imdb:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[title]' derivation='Count' name='[cnt:title:qk]' pivot='key' type='quantitative' />
+            <column caption='Imdb' datatype='string' name='[imdb]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_4341399716875128832]' derivation='None' name='[none:Calculation_4341399716875128832:nk]' pivot='key' type='nominal' />
+            <column-instance column='[binary]' derivation='None' name='[none:binary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[test]' derivation='None' name='[none:test:nk]' pivot='key' type='nominal' />
+            <column caption='Test' datatype='string' name='[test]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:binary:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:binary:nk]' />
+              <groupfilter function='member' level='[none:binary:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bjqff213e3hxy1aer1lx0ljewru].[cnt:title:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:binary:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' scope='rows' value='#e15759be' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='title' class='0' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[cnt:title:qk]' scope='cols' value='Anzahl der Filme' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='30' />
+            <format attr='color' data-class='subtotal' value='#606b76' />
+            <format attr='color' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='#a7acad' />
+            <format attr='text-orientation' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='-90' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='#e15759' />
+            <format attr='font-size' data-class='subtotal' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='12' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='bold' />
+            <format attr='font-family' data-class='subtotal' field='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk]' value='kindOERgarten' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='2' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='dashed' />
+            <format attr='border-color' data-class='subtotal' scope='rows' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='2' />
+            <format attr='border-color' data-class='subtotal' scope='rows' value='#4e79a7' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='dashed' />
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#e15759' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dashed' />
+            <format attr='stroke-size' scope='rows' value='2' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='div-level' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:Calculation_4341399716875128832:nk]' />
+              <text column='[federated.0bjqff213e3hxy1aer1lx0ljewru].[cnt:imdb:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0bjqff213e3hxy1aer1lx0ljewru].[none:Calculation_4341399716875128832:nk] / [federated.0bjqff213e3hxy1aer1lx0ljewru].[none:test:nk])</rows>
+        <cols>[federated.0bjqff213e3hxy1aer1lx0ljewru].[cnt:title:qk]</cols>
+        <subtotals>
+          <column>[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:binary:nk]</column>
+        </subtotals>
+      </table>
+      <simple-id uuid='{E57B2F6E-6BB0-465D-9702-648F18D22DF9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Frauendarstellung in Filmen'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.0bjqff213e3hxy1aer1lx0ljewru].[none:Calculation_4341399716875128832:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C79BBC0B-528A-43CC-855E-E5BFBFE404B0}' />
+    </window>
+  </windows>
+</workbook>
